@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SpamGuard</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src="popup.js"></script>
+  <script src="background.js"></script>
+
+</head>
+
+<body>
+  <!-- Add this to your popup.html -->
+  <div>
+    <h1>SpamGuard</h1>
+    <p>Current-URL:</p>
+    <p id="shortened-url"></p>
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider round"></span>
+    </label>
+    <p id="modeText"></p>
+    <!-- <button id="loadUrl">Load URL</button> -->
+    <button id="checkUrl" style="display: none;">Check URL</button>
+    <button id="checkHistory">Check History</button>
+    <p id="httpsStatus" style="display: none;"></p>
+    <p id="safeBrowsingResult" style="display: none;"></p>
+    <p id="virusTotalResult" style="display: none;"></p>
+    <p id="urlScanResult" style="display: none;"></p>
+
+  </div>
+
+</body>
+
+</html>
